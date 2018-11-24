@@ -1,0 +1,2 @@
+172.22.0.1 - - [24/Nov/2018:16:04:06 +0000] "GET /apiIngresse/users HTTP/1.1" 404 1494 "-" "insomnia/6.2.0"
+172.22.0.1 - - [24/Nov/2018:16:05:06 +0000] "GET /apiIngresse/users HTTP/1.1" 404 1494 "-" "insomnia/6.2.0"
