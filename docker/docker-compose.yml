@@ -8,12 +8,10 @@ networks:
 
 volumes:
   mysql:
-    driver: ${VOLUMES_DRIVER}  
+    driver: ${VOLUMES_DRIVER}
   redis:
     driver: ${VOLUMES_DRIVER}  
   phpmyadmin:
-    driver: ${VOLUMES_DRIVER}  
-  caddy:
     driver: ${VOLUMES_DRIVER}
  
 
@@ -194,7 +192,6 @@ services:
           aliases:
           - ingresse-api.dev
 
-
 ### MySQL ################################################
     mysql:
       build:
@@ -215,34 +212,14 @@ services:
       networks:
         - backend
 
-
 ### Redis ################################################
     redis:
-      #build: ./redis
-      image: 'redis'
+      build: ./redis
       volumes:
         - ${DATA_PATH_HOST}/redis:/data
       ports:
         - "${REDIS_PORT}:6379"
       networks:
-        - backend
-
-
-### Caddy Server #########################################
-    caddy:
-      build: ./caddy
-      volumes:
-        - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
-        - ${CADDY_CONFIG_PATH}:/etc/caddy
-        - ${CADDY_HOST_LOG_PATH}:/var/log/caddy
-        - ${DATA_PATH_HOST}:/root/.caddy
-      ports:
-        - "8000"
-        - "443"
-      depends_on:
-        - php-fpm
-      networks:
-        - frontend
         - backend
 
 ### phpMyAdmin ###########################################
