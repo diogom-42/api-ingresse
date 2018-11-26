@@ -13,6 +13,7 @@ volumes:
     driver: ${VOLUMES_DRIVER}  
   phpmyadmin:
     driver: ${VOLUMES_DRIVER}
+
  
 
 services:
