@@ -136,7 +136,7 @@ services:
         - "9000"
       extra_hosts:
         - "dockerhost:${DOCKER_HOST_IP}"
-        - "ingresse-api.dev:${DOCKER_HOST_IP}"
+        - "ingresse.test.com:${DOCKER_HOST_IP}"
       environment:
         - PHP_IDE_CONFIG=${PHP_IDE_CONFIG}
         - DOCKER_HOST=tcp://docker-in-docker:2375
@@ -188,10 +188,10 @@ services:
       networks:
         frontend:
           aliases:
-          - ingresse-api.dev
+          - ingresse.test.com
         backend:
           aliases:
-          - ingresse-api.dev
+          - ingresse.test.com
 
 ### MySQL ################################################
     mysql:

@@ -1,1 +1,5 @@
 172.22.0.1 - - [25/Nov/2018:21:58:20 +0000] "GET / HTTP/1.1" 200 830 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0"
+172.25.0.1 - - [26/Nov/2018:13:47:32 +0000] "GET / HTTP/1.1" 200 830 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0"
+172.25.0.1 - - [26/Nov/2018:13:47:32 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0"
+172.22.0.1 - - [26/Nov/2018:13:58:46 +0000] "GET / HTTP/1.1" 200 830 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0"
+172.22.0.1 - - [26/Nov/2018:13:58:46 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0"
