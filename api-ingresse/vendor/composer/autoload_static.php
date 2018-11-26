@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30
+class ComposerStaticInitfa5bae3ba226ee09c0793a458a18e7d4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -12,8 +12,8 @@ class ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
     );
@@ -115,8 +115,8 @@ class ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -323,6 +323,7 @@ class ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsersController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -3688,11 +3689,11 @@ class ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitd4712a20316385fd46f9a7fd3e6fce30::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfa5bae3ba226ee09c0793a458a18e7d4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfa5bae3ba226ee09c0793a458a18e7d4::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitfa5bae3ba226ee09c0793a458a18e7d4::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitfa5bae3ba226ee09c0793a458a18e7d4::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitfa5bae3ba226ee09c0793a458a18e7d4::$classMap;
 
         }, null, ClassLoader::class);
     }
