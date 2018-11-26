@@ -20,33 +20,33 @@ https://ingresse.test.com/api/apiIngresse/users/
 ```python
 GET - https://ingresse.test.com/api/apiIngresse/users/
 Result: {
-    "id": 1,
-    "name": "Randall Blick",
-    "email": "schiller.rusty@example.com",
-    "phone": "523-376-5597 x40344",
-    "created_at": "2018-11-26 19:06:02",
-    "updated_at": "2018-11-26 19:06:02",
-    "deleted_at": null
-  }
+            "id": 1,
+            "name": "Randall Blick",
+            "email": "schiller.rusty@example.com",
+            "phone": "523-376-5597 x40344",
+            "created_at": "2018-11-26 19:06:02",
+            "updated_at": "2018-11-26 19:06:02",
+            "deleted_at": null
+        }
 ______________________________________________________________________________________________________
 PUT - https://ingresse.test.com/api/apiIngresse/users/{id}
-{
-  "name": "Diogo Moura", //Caso queira editar o nome, editar o campo 'name'
-  "email": "diogo.moura@example.com", //Caso queira editar o email, editar o campo 'email'
-  "phone": "(454) 3333-0992" //Caso queira editar o telefone, editar o campo 'phone'
-}
+Result: {
+            "name": "Diogo Moura", //Caso queira editar o nome, editar o campo 'name'
+            "email": "diogo.moura@example.com", //Caso queira editar o email, editar o campo 'email'
+            "phone": "(454) 3333-0992" //Caso queira editar o telefone, editar o campo 'phone'
+        }
 ______________________________________________________________________________________________________
 POST - https://ingresse.test.com/api/apiIngresse/users/
-{
-  "name": "Bruna Maria", //inserir um nome
-  "email": "bruna@email.com", //inserir um email
-  "phone": "(12) 4015-0992" //inserir um telefone
-}
+Result: {
+            "name": "Bruna Maria", //inserir um nome
+            "email": "bruna@email.com", //inserir um email
+            "phone": "(12) 4015-0992" //inserir um telefone
+        }
 ______________________________________________________________________________________________________
 DELETE - https://ingresse.test.com/api/apiIngresse/users/{id}
-{
-  "message": "Registro deletado"
-}
+Result: {
+            "message": "Registro deletado"
+        }
 
 ```
 
